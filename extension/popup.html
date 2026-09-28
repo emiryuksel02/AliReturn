@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang='en'>
+<head><meta charset='utf-8'><link rel='stylesheet' href='popup.css'></head>
+<body>
+  <header>
+    <div class='brand'>
+      <img class='brand-icon' src='icons/icon-48.png' alt=''>
+      <div><span>ALIEXPRESS EXPORTER</span><h1>AliReturn</h1></div>
+    </div>
+    <i id='statusDot'></i>
+  </header>
+  <section class='dates'>
+    <label>From<input id='from' type='date'></label>
+    <label>To<input id='to' type='date'></label>
+  </section>
+  <div class='actions'>
+    <button id='start' class='primary'>Collect returns</button>
+    <button id='stop'>Stop</button>
+  </div>
+  <button id='open' class='link'>Open Returns &amp; refunds</button>
+  <section class='status'><strong id='message'>Ready</strong><span id='stats'>0 collected</span></section>
+  <section id='totals' class='totals'>No refunds collected yet</section>
+  <div class='actions exports'>
+    <button id='csv'>Excel CSV</button><button id='json'>JSON</button><button id='reset'>Reset</button>
+  </div>
+  <div id='error' class='error hidden'></div>
+  <script src='popup.js'></script>
+</body>
+</html>

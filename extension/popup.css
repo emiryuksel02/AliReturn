@@ -1,0 +1,19 @@
+:root { font-family:Inter,ui-sans-serif,system-ui,sans-serif; color:#171717 }
+* { box-sizing:border-box } body { width:390px; margin:0; padding:18px; background:#f6f6f7 }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:15px }
+.brand { display:flex; align-items:center; gap:9px }
+.brand-icon { width:38px; height:38px }
+header span { color:#ff4747; font-size:9px; font-weight:800; letter-spacing:1.2px }
+h1 { margin:0; font-size:25px; letter-spacing:-1px } header i { width:11px; height:11px; border-radius:50%; background:#aaa }
+header i.working { background:#f0a000; box-shadow:0 0 0 4px #f0a00020 } header i.complete { background:#16a05d } header i.error { background:#d22 }
+.dates { display:grid; grid-template-columns:1fr 1fr; gap:9px }
+label { display:grid; gap:5px; color:#666; font-size:11px; font-weight:700 }
+input { width:100%; height:38px; padding:0 8px; border:1px solid #ccc; border-radius:7px; background:#fff }
+.actions { display:flex; gap:7px; margin-top:10px }
+button { height:37px; padding:0 12px; border:0; border-radius:7px; background:#e8e9ec; color:#222; font-weight:700; cursor:pointer }
+button.primary { flex:1; color:#fff; background:#ff4747 } button:disabled { opacity:.4; cursor:default }
+button.link { width:100%; margin-top:8px; color:#b32b2b; background:transparent }
+.status { display:grid; gap:4px; margin-top:10px; padding:12px; border:1px solid #e2e2e2; border-radius:9px; background:#fff }
+.status strong { font-size:12px }.status span,.totals { color:#707070; font-size:11px }
+.totals { padding:9px 2px 0; font-weight:700 }.exports button { flex:1 }
+.error { margin-top:10px; padding:9px; border-radius:7px; background:#ffecec; color:#a11; font-size:11px }.hidden { display:none }
